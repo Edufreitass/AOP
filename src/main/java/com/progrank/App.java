@@ -9,6 +9,10 @@ public class App {
 		
 		AbstractApplicationContext con = new AnnotationConfigApplicationContext(AppConfig.class);
 		
+		Student st = con.getBean("student", Student.class);
+		
+		st.study();
+		
 	}
 
 }
